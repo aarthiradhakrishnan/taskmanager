@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def index():
     file=pd.read_csv('storage.csv')  
-    return render_template('index.html', dataframe=file)
+    return render_template('main.html', dataframe=file)
 
 @app.route('/submit', methods=['POST'])
 def submit():
