@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row">
 
-            <div class="tabel-div">
+            <div class="tabel-div col" >
                 <table class="table">
                     <tr>
                         {% for col in dataframe.columns %}
@@ -33,9 +33,9 @@
                 </table>
             </div>
 
-            <div class="col">
+            <div class="row">
 
-                <div class="form-div">
+                <div class="form-div col">
                     <form method="post" action="/submit">
                         
                         <div class="mb-3">
@@ -61,10 +61,9 @@
                         <button type="submit" class="btn btn-primary">Submit</button>
                         
                       </form>
-                      <hr>
                 </div>
 
-                <div class="form-div">
+                <div class="form-div col">
                     <form method="post" action="/update">
                         <div class="mb-3">
                             <label for="index" class="form-label">Index No:</label>
